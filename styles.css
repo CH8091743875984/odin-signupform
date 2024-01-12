@@ -1,3 +1,96 @@
+body {
+    height: 100vh;
+    width: 100vw;
+    margin: 0
+}
+
 .content {
     display:flex;
+    height: 100vh;
+    width: 100vw;
+}
+
+.leftColumn {
+    background-image: url('history-in-hd-e5eDHbmHprg-unsplash.jpg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100vh ;
+    width: 35vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightColumn {
+    background-color: rgb(211, 210, 210);
+    width: 65vw;
+    padding: 0px 20px;
+
+}
+
+.logoBar {
+    display: flex;
+    background-color: rgba(0, 0, 0, 0.4);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.companyName {
+    color: white;
+}
+
+#leftBackground {
+    height: 100vh;
+}
+
+#logo {
+    height: 100px;
+    width: 100px;
+}
+
+.formFields {
+    display: flex;
+}
+
+.formColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+.formColumnRight {
+    padding-left: 10px;
+}
+
+label {
+    padding-top: 10px;
+}
+
+input {
+    width: 250px;
+    margin-bottom: 5px;
+}
+
+#createAccountBtn {
+    font-size: 18px;
+    height: 50px;
+    width: 200px;
+}
+
+.mainHeading, .mainFooter {
+    height: 35vh;
+}
+
+.formFields {
+    height: 30vh;
+}
+
+.mainHeading {
+    display: flex;
+    
+    
+}
+
+.mainHeading p {
+        
 }

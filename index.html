@@ -10,21 +10,52 @@
     <!-- Photo by <a href="https://unsplash.com/@historyhd?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">History in HD</a> on <a href="https://unsplash.com/photos/astronaut-standing-on-gray-sand-e5eDHbmHprg?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a> -->
     <div class="content">
         <div class="leftColumn">
-            <img src="history-in-hd-e5eDHbmHprg-unsplash.jpg">
+            <!-- <img id="leftBackground" src="history-in-hd-e5eDHbmHprg-unsplash.jpg"> -->
             <div class="logoBar">
-                <div class="logo">
-                    <img src="https://www.clipartbest.com/cliparts/abT/yzj/abTyzjXiL.png">
-                </div>
+                
+                <img id="logo" src="https://www.clipartbest.com/cliparts/abT/yzj/abTyzjXiL.png">
+                
                 <div class="companyName">Company Name</div>
             </div>
         </div>
         <div class="rightColumn">
-            <div class="mainHeading">This is not a real online service!...</div>
+            <div class="mainHeading">
+                <p>
+                    This is not a real online service! You know you need something like this in your life to help you realize your deepest dreams. Sign up <em>now</em> to get started.
+                    <br><br>You <em>know</em> you want to.
+                </p>
+            </div>
             <div class="signupForm">
+                <form action="" method="get">
+                    <legend>Let's do this!</legend>
+                    <div class="formFields">
+                        <div class="formColumn formColumnLeft">
+                            <label for="firstName">First Name</label>
+                            <input type="text" id="firstName" name="First Name">
 
+                            <label for="email">Email</label>
+                            <input type="email" id="email" name="Email">
+
+                            <label for="password">Password</label>
+                            <input type="password" id="phone" name="Phone">
+                        </div>
+                        
+                        <div class="formColumn formColumnRight">
+                            <label for="lastName">Last Name</label>
+                            <input type="text" id="lastName" name="Last Name">
+
+                            <label for="phone">Phone</label>
+                            <input type="tel" id="phone" name="Phone">
+                        
+                            <label for="confirmPassword">Confirm Password</label>
+                            <input type="password" id="confirmPassword" name="Confirm Password">
+                        </div>
+                    </div>
+
+                </form>
             </div>
             <div class="mainFooter">
-                <button>Create Account</button>
+                <button id="createAccountBtn">Create Account</button>
                 <div>Already have an account? Log in</div>
             </div>
         </div>
