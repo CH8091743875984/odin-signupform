@@ -1,7 +1,22 @@
+:root {
+    --primary-color: rgb(10, 10, 10);
+    --secondary-color: rgb(25, 25, 25);
+    --accent-color: goldenrod;
+    --font-color: lightgray;
+}
+
 body {
     height: 100vh;
     width: 100vw;
-    margin: 0
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Tektur-Regular', 'Arial';
+    color: var(--font-color)
+}
+
+@font-face {
+    font-family: "Tektur-Regular";
+    src: url('Tektur-Regular.ttf') format('truetype');
 }
 
 .content {
@@ -14,17 +29,19 @@ body {
     background-image: url('history-in-hd-e5eDHbmHprg-unsplash.jpg');
     background-position: center;
     background-repeat: no-repeat;
-    background-size: 100vh ;
+    background-size: cover;
     width: 35vw;
     display: flex;
     justify-content: center;
     align-items: center;
+    background-color: var(--primary-color);
+
 }
 
 .rightColumn {
-    background-color: rgb(211, 210, 210);
+    background-color: var(--primary-color);
     width: 65vw;
-    padding: 0px 20px;
+    padding: 0px 0px;
 
 }
 
@@ -38,15 +55,12 @@ body {
 
 .companyName {
     color: white;
-}
-
-#leftBackground {
-    height: 100vh;
+    font-size: 2rem;
 }
 
 #logo {
-    height: 100px;
-    width: 100px;
+    height: 75px;
+    width: 75px;
 }
 
 .formFields {
@@ -64,33 +78,67 @@ body {
 
 label {
     padding-top: 10px;
+    font-size: .75rem;
+    text-transform: uppercase;
 }
 
 input {
     width: 250px;
     margin-bottom: 5px;
+    background-color: var(--secondary-color);
+    color: var(--font-color);
+    border-radius: 5px;
+    border: 1px solid white;
+}
+
+input:focus {
+    border: 1px solid var(--accent-color);
+    box-shadow: 2px 2px 2px var(--accent-color);
+    outline: 1px solid var(--accent-color);
 }
 
 #createAccountBtn {
-    font-size: 18px;
+    font-size: 1.25rem;
     height: 50px;
     width: 200px;
+    border: 3px solid var(--accent-color);
+    color: var(--accent-color);
+    background-color: var(--primary-color);
+    border-radius: 5px;
+    font-family: 'Tektur-Regular', 'Arial';
+    margin: 40px 0px;
+}
+
+#createAccountBtn:hover {
+    color: white;
+    background-color: var(--accent-color);
 }
 
 .mainHeading, .mainFooter {
-    height: 35vh;
+    height: 37.5vh;
+    padding: 0px 20px;
 }
 
 .formFields {
-    height: 30vh;
+    height: 25vh;
 }
 
 .mainHeading {
     display: flex;
-    
+    align-items: center;
+    font-size: 1.25rem;
     
 }
 
-.mainHeading p {
-        
+.signupForm {
+    background-color: var(--secondary-color);
+    padding: 20px 20px;
+
+}
+
+a:link{
+    color: var(--accent-color);
+}
+a:hover {
+    color: white;
 }
